@@ -1,11 +1,5 @@
 <template>
   <div>
-
-    <!-- <div class="video-container">
-import { VideoPlayer } from '@videojs-player/vue';
-      <video src="../static/homeVideo.mp4" controls autoplay loop muted></video>
-    </div> -->
-
     <!--Title + Video Section-->
     <div class="flex justify-center home-video-background align-center">
       <h1 class="home-title">ELEVATING THE JAZZ SCENE WITH LEVIATHAN'S GRACE</h1>
@@ -267,12 +261,11 @@ import { VideoPlayer } from '@videojs-player/vue';
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
-import VideoPlayerComponent from '../components/videoPlayer/videoPlayer';
 
 @Component({
   components: {
-    VideoPlayerComponent
   }
+
 })
 export default class IndexPage extends Vue {
   public items = [

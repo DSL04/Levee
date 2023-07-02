@@ -1,3 +1,87 @@
 .v-application p {
     margin-bottom: 0px;
 }
+
+.contact-video-background {
+    width: -webkit-fill-available;
+    height: 474px;
+    flex-shrink: 0;
+    background: #000;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  }
+
+  .contact-title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family: '?????';
+}
+
+.contact-info-background {
+    width: -webkit-fill-available;
+    height: 450px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background: #333333;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+
+  .contact-query-background {
+    width: -webkit-fill-available;
+    height: 500px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background: #878484;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+
+.phone-image {
+    background: url(../../static/contactPhone.gif);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.location-image {
+    background: url(../../static/locationContact.gif);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.email-image {
+    background: url(../../static/emailContact.gif);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contact-title {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-family: '?????';
+}
+
+.contact-title2 {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-family: '?????';
+}
+
+// .v-text-field > .v-input__control > .v-input__slot > .v-text-field__slot {
+//     background-color: #fff;
+// }

@@ -157,7 +157,7 @@ import { VideoPlayer } from '@videojs-player/vue';
 
         </div>
         <div class="w-1/2 text-white flex justify-center">
-          <div class="space-y-8 ml-3 home-title3">
+          <div class="space-y-8 ml-3 home-title3 overflow-y-hidden height-600">
             <h1>Immerse yourself in the captivating melodies that reverberate through the air as you enter these hallowed halls. Feel the energy and anticipation build as you witness the stage being set for unforgettable performances. Each venue at Levee has a distinct personality, with its own architectural charm and captivating design.</h1>
             <h1>As you explore these iconic spaces, you'll find yourself transported to a realm where jazz takes center stage. From sleek, modern venues boasting breathtaking skyline views to cozy hideaways tucked amidst the hustle and bustle of the city, Levee offers an unparalleled range of settings. Whether you prefer the intimate ambiance of candlelit lounges or the grandeur of expansive concert halls, there's a perfect venue to suit your jazz-loving soul.</h1>
             <h1>With a legacy that spans generations, these renowned venues have hosted jazz legends and rising stars alike. Their names have become synonymous with excellence, attracting performers who seek to showcase their talent in these hallowed grounds. Each performance is a testament to the rich history and cultural significance of jazz, and a testament to the enduring legacy of Levee's venues.</h1>
@@ -168,22 +168,28 @@ import { VideoPlayer } from '@videojs-player/vue';
     </div>
 
     <!--Media sample Section-->
-    <div class="mt-4 home-media-background">
+    <div class="mt-4 home-media-background mb-10">
       <div class="flex justify-evenly">
-        <div class="flex justify-center text-white w-1/3">
-          <div class="media-scroller-y">
 
+        <div class=" text-white w-1/3">
+          <div class="flex justify-center text-white mt-3"><h1 class="home-title2">Live Performances</h1></div>
+          <div class="flex justify-center media-scroller-y">
+            <div><iframe width="560" height="352" src="https://www.youtube.com/embed/1PPtCkMRCoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div><iframe width="560" height="352" src="https://www.youtube.com/embed/hVf7NfBDEK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div><iframe width="560" height="352" src="https://www.youtube.com/embed/7BVLz1UCXWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
           </div>
 
         </div>
 
-        <div class="flex justify-center text-white w-1/3">
-          <div class="home-title2">The Socials/Media</div>
-
+        <div class="flex flex-col justify-center w-1/3">
+            <div class="home-title2 mt-2">Media</div>
+            <div class="home-title2 flex justify-center mt-5 align-middle">If you want to tailor your jazz needs to a certain genre, check out our artists page by clicking the button below</div>
+            <div class="flex justify-center"><v-btn class="button">Artists</v-btn></div>
         </div>
 
-        <div class="flex justify-center text-white w-1/3">
-          <div class="media-scroller-y">
+        <div class="text-white w-1/3">
+          <div class="flex justify-center text-white mt-3"><h1 class="home-title2">Recommendations & Samples</h1></div>
+          <div class="flex justify-center media-scroller-y">
             <div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VE95W6PPqQ3e0chkU2AVZ?utm_source=generator" width="100%" height="352" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
             <div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6XI1bDKgSfXWEyP297UaZS?utm_source=generator" width="100%" height="352" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
             <div><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5VZn5Gsn2ckFJ2bmRo9GPe?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
@@ -277,6 +283,20 @@ export default class IndexPage extends Vue {
     2px -2px 0 #4e0076,
     -2px 2px 0 #4e0076,
     2px 2px 0 #4e0076;
+}
+
+.height-600 {
+  height: 600px;
+}
+
+.button {
+  .v-btn__content {
+    color: black !important;
+    font-family: '?????'!important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 25px !important;
+  }
 }
 
 .home-video-background {
@@ -435,9 +455,9 @@ export default class IndexPage extends Vue {
 .media-scroller-y {
   display: grid;
   grid-auto-flow: row;
-  grid-auto-rows: 73%;
+  grid-auto-rows: 83%;
   overflow-y: auto;
-  height: 600px;
+  height: 500px;
 }
 
 /* ===== Scrollbar CSS ===== */

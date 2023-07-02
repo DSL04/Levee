@@ -1,3 +1,48 @@
 .v-footer--fixed {
     position: relative ;
 }
+
+.spotify-image {
+    background-image: url(../../static/spotify.png);
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+}
+
+.pepsi-image {
+    background-image: url(../../static/pepsi.png);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.citadel-image {
+    background-image: url(../../static/citadel.png);
+    width: 400px;
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+}
+
+.shonen-image {
+    background-image: url(../../static/shonen.png);
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 25px;
+    font-family: '?????';
+    text-align: -webkit-center;
+}
+
+
+.theme--light.v-footer {
+    background-image: url(../../static/footerbg.jpg); 
+    background-size: cover;
+}

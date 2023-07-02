@@ -3,20 +3,20 @@
 <template>
     <v-app-bar app>
         <v-toolbar-title>
-            <v-btn text class="v-title">LeveeJazz</v-btn>
+            <v-btn text to="/" class="v-title">LeveeJazz</v-btn>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
 
         <v-toolbar-items class="space-x-32">
-        <v-btn text>Artists</v-btn>
-        <v-btn text>Events</v-btn>
-        <v-btn text>Booking</v-btn>
-        <v-btn icon>
-        <v-icon>mdi-cart</v-icon>
+            <v-btn text to="/artists">Artists</v-btn>
+            <v-btn text to="/events">Events</v-btn>
+            <v-btn text to="/booking">Booking</v-btn>
+            <v-btn icon to="/shop">
+            <v-icon>mdi-cart</v-icon>
             <span>Shop</span>
-        </v-btn>
-        <v-btn text>Contact</v-btn>
+            </v-btn>
+            <v-btn text to="/contact">Contact</v-btn>
         </v-toolbar-items>
 
         <v-menu offset-y>

@@ -11,8 +11,66 @@ import { VideoPlayer } from '@videojs-player/vue';
       <h1 class="home-title">ELEVATING THE JAZZ SCENE WITH LEVIATHAN'S GRACE</h1>
     </div>
 
+    <!--TimeLine-->
+    <div class="mt-4 home-timeline-background">
+      <div class="mt-4 flex justify-center home-title2">Here is what you can expect</div>
+      <v-timeline class="flex justify-center">
+        <div class="w-1/2">
+          <v-timeline-item
+            dot-color="purple-lighten-2"
+            fill-dot
+          >
+            <v-card>
+              <v-card-title class="bg-purple-lighten-2">
+                <h2 class="font-weight-light">
+                  Featured Artists Section
+                </h2>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
+
+          <v-timeline-item
+            dot-color="amber-lighten-1"
+            fill-dot
+            size="x-small"
+          >
+            <v-card>
+              <v-card-title class="bg-amber-lighten-1 justify-end">
+                <h2 class="me-4 font-weight-light">
+                  Venues Section
+                </h2>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
+
+          <v-timeline-item
+            dot-color="cyan-lighten-1"
+            fill-dot
+          >
+            <v-card>
+              <v-card-title class="bg-cyan-lighten-1">
+                <h2 class="font-weight-light">
+                  Media and Sample Recommendations Section
+                </h2>
+              </v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
+        </div>
+      </v-timeline>
+
+    </div>
+
     <!--Company Description-->
-    <div class="flex justify-center mt-4 home-description-background align-center">
+    <div class="flex justify-center mt-10 home-description-background align-center">
       <div class="space-y-10 w-4/5">
         <h1 class="home-title2">Levee is a leading jazz management and promotion agency that represents talented jazz musicians and aims to elevate their careers to new heights.</h1>
         <h1 class="home-title2">With a passion for jazz and a commitment to artistic excellence, Levee connects artists with opportunities, organizes events, and fosters collaborations.</h1>
@@ -304,6 +362,14 @@ export default class IndexPage extends Vue {
   height: 474px;
   flex-shrink: 0;
   background: #000;
+  /* box-shadow: 4px 4px 4px 4px #a60cff; */
+}
+
+.home-timeline-background {
+  width: -webkit-fill-available;
+  height: 600px;
+  flex-shrink: 0;
+  background: #555555;
   /* box-shadow: 4px 4px 4px 4px #a60cff; */
 }
 

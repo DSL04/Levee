@@ -1,4 +1,6 @@
+<script lang="ts" src="./contact.ts"></script>
 <style lang="scss" src="./contact.scss"></style>
+
 <template>
   <div>
 
@@ -38,7 +40,7 @@
 
     </div>
 
-    <div class="flex flex-col contact-query-background mt-5 mb-5">
+    <div class="flex flex-col contact-query-background mt-10 mb-10">
       <div class="flex justify-center contact-title">Interested in joining our company as a Jazz artist?</div>
       <div class="flex">
         <div class="w-1/2 flex-col flex items-center">
@@ -101,43 +103,4 @@
   </div>
 </template>
 
-<script lang="ts">
-// Import necessary dependencies and types
-import { Component, Vue } from 'vue-property-decorator';
 
-// Define the component class
-@Component
-export default class ContactPage extends Vue {
-  // Data properties
-  valid: boolean = false;
-  firstname: string = '';
-  lastname: string = '';
-  phone: string = '';
-  comment: String = '';
-  nameRules: ((value: string) => string | boolean)[] = [
-    value => {
-      if (value) return true;
-
-      return 'Name is required.';
-    },
-    value => {
-      if (value?.length <= 10) return true;
-
-      return 'Name must be less than 10 characters.';
-    },
-  ];
-  email: string = '';
-  emailRules: ((value: string) => string | boolean)[] = [
-    value => {
-      if (value) return true;
-
-      return 'E-mail is required.';
-    },
-    value => {
-      if (/.+@.+\..+/.test(value)) return true;
-
-      return 'E-mail must be valid.';
-    },
-  ];
-}
-</script>

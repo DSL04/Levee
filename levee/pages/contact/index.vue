@@ -1,0 +1,143 @@
+<style lang="scss" src="./contact.scss"></style>
+<template>
+  <div>
+
+    <div class="flex justify-center contact-video-background align-center">
+      <h1 class="contact-title">HOLLER AT US....</h1>
+    </div>
+
+    <div class="flex contact-info-background mt-5">
+      <div class="mt-5 flex">
+
+        <div class="w-1/3 flex flex-col items-center">
+            <div class="location-image"></div>
+            <div class="flex flex-col items-center">
+              <div class="contact-title">Location</div>
+              <div class="contact-title2">123 Main Street, City, Country</div>
+            </div>
+        </div>
+
+        <div class="w-1/3 flex flex-col items-center">
+            <div class="phone-image"></div>
+            <div class="flex flex-col items-center">
+              <div class="contact-title">Phone</div>
+              <div class="contact-title2">123-456-7890</div>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="w-1/3 flex flex-col items-center">
+            <div class="email-image"></div>
+            <div class="flex flex-col items-center">
+              <div class="contact-title">Email</div>
+              <div class="contact-title2">info@example.com</div>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="flex flex-col contact-query-background mt-5 mb-5">
+      <div class="flex justify-center contact-title">Interested in joining our company as a Jazz artist?</div>
+      <div class="flex">
+        <div class="w-1/2 flex-col flex items-center">
+
+          <div class="w-1/2">
+            <v-text-field
+              v-model="firstname"
+              :rules="nameRules"
+              :counter="10"
+              label="First name"
+              required
+            ></v-text-field>
+
+            <v-text-field
+            v-model="phone"
+            label="Phone Number"
+            required
+          ></v-text-field>
+          </div>
+
+        </div>
+
+        <div class="w-1/2 flex-col flex items-center">
+          <div class="w-1/2">
+            <v-text-field
+              v-model="lastname"
+              :rules="nameRules"
+              :counter="10"
+              label="Last name"
+              required
+            ></v-text-field>
+
+            <v-text-field
+            v-model="email"
+            :rules="emailRules"
+            label="E-mail"
+            required
+          ></v-text-field>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="flex justify-center">
+        <div class="w-1/2">
+        <v-textarea
+            label="Write anything you deem interesting about yourself, or you thought we should know"
+          ></v-textarea>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class=" w-1/12">
+          <v-btn class="me-4" type="submit">SUBMIT</v-btn>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</template>
+
+<script lang="ts">
+// Import necessary dependencies and types
+import { Component, Vue } from 'vue-property-decorator';
+
+// Define the component class
+@Component
+export default class ContactPage extends Vue {
+  // Data properties
+  valid: boolean = false;
+  firstname: string = '';
+  lastname: string = '';
+  phone: string = '';
+  comment: String = '';
+  nameRules: ((value: string) => string | boolean)[] = [
+    value => {
+      if (value) return true;
+
+      return 'Name is required.';
+    },
+    value => {
+      if (value?.length <= 10) return true;
+
+      return 'Name must be less than 10 characters.';
+    },
+  ];
+  email: string = '';
+  emailRules: ((value: string) => string | boolean)[] = [
+    value => {
+      if (value) return true;
+
+      return 'E-mail is required.';
+    },
+    value => {
+      if (/.+@.+\..+/.test(value)) return true;
+
+      return 'E-mail must be valid.';
+    },
+  ];
+}
+</script>

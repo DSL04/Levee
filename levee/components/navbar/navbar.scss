@@ -1,0 +1,29 @@
+.v-app-bar.v-app-bar--fixed {
+    position: relative; 
+}
+
+.theme--light.v-app-bar.v-toolbar.v-sheet {
+// background-color: #21069a;
+background-image: linear-gradient(50deg, #111, #280142, #111); 
+}
+
+.v-btn__content {
+    color: white;
+}
+
+.v-btn:hover {
+  }
+
+.v-title {
+    font-weight: 400 !important;
+    font-size: 30px !important;
+    line-height: 30px !important;
+    // font-family: 'Great Vibes', cursive;
+    // letter-spacing: 0.2em;
+    // text-transform: lowercase;
+}
+
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../../assets/fonts/GreatVibes-Regular.ttf') format('truetype'); /* Adjust the path to the font file */
+  }

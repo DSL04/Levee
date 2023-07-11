@@ -519,26 +519,5 @@ export default class IndexPage extends Vue {
   height: 500px;
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #8208c4 #8208c4;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 9px;
-  }
-
-  *::-webkit-scrollbar-track {
-    /* background: url(../static/background3.gif); */
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #430863;
-    border-radius: 13px;
-    border: 7px double #f6f6f6;
-  }
 
 </style>

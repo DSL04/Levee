@@ -13,3 +13,76 @@
     background: #555555;
     /* box-shadow: 4px 4px 4px 4px #a60cff; */
   }
+
+  .artists-artists-background {
+    width: -webkit-fill-available;
+    height: 600px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background: #000000;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+
+  .artists-promotion-background {
+    width: -webkit-fill-available;
+    height: 900px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background: url(../../static/promotionBackground.jpg);
+    background-position:right;
+    
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+
+  .artists-collab-background {
+    width: -webkit-fill-available;
+    // max-height: 1300px ;
+    height: 1000px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background: #000000;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+
+
+  .artists-title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family: '?????';
+}
+
+.artists-title2 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-family: '?????';
+}
+
+.artists-title3 {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-family: '?????';
+}
+
+  .artists-scroller-x {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    overflow-x:auto;
+    }
+
+  .max-height {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+
+  .theme--light.v-label {
+    // color: rgba(255, 5, 5, 0.6) !important;
+    // font-weight: 500;
+    // font-size: 25px;
+}

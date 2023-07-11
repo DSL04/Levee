@@ -16,23 +16,38 @@
  
 .events-showcase-background {
     width: -webkit-fill-available;
-    height: 2000px;
+    height: 1700px;
     flex-shrink: 0;
     background: #000000;
     /* box-shadow: 4px 4px 4px 4px #a60cff; */
 }
 
+.scroll-background {
+    background: url(../../static/background4.gif);
+    object-fit: cover;
+}
+
+.artist-image {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
   .events-title {
     color: #fff;
-    text-align: center;
     font-size: 40px;
     font-family: '?????';
 }
 
 .events-title2 {
     color: #fff;
-    text-align: center;
     font-size: 35px;
+    font-family: '?????';
+}
+
+.events-title3 {
+    color: #fff;
+    font-size: 25px;
     font-family: '?????';
 }
 
@@ -40,3 +55,12 @@
     max-height: 500px;
     overflow-y: auto;
   }
+
+  .theme--light.v-btn.v-btn--has-bg {
+    background-color: #292727;
+}
+
+.theme--light.v-icon {
+    color: rgb(255, 255, 255);
+}
+

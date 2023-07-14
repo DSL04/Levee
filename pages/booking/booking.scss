@@ -1,0 +1,70 @@
+.booking-video-background {
+    width: -webkit-fill-available;
+    height: 474px;
+    flex-shrink: 0;
+    background: #000;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  }
+
+  .booking-section-background {
+    width: -webkit-fill-available;
+    height: 1100px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, rgb(79, 4, 89), rgb(45, 2, 51));
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  }
+
+
+  .image-container {
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    object-fit: cover;
+  }
+
+  .image-container2 {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    object-fit: cover;
+  }
+
+  .border {
+    border-color: #fff;
+    padding: 10px;
+  }
+
+  .booking-title {
+    color: #fff;
+    font-size: 40px;
+    font-family: '?????';
+}
+
+.booking-title2 {
+    color: #fff;
+    font-size: 35px;
+    font-family: '?????';
+}
+
+.booking-title3 {
+  color: #fff;
+  font-size: 25px;
+  font-family: '?????';
+}
+
+
+.menu-color .v-select__selections {
+  color: rgb(240, 233, 233) !important;
+}
+
+.theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+  border-color: rgba(241, 235, 235, 0.42);
+}
+
+.theme--light.v-icon {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.theme--light.v-label {
+  color: rgba(255, 255, 255, 0.6);
+}

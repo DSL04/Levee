@@ -9,6 +9,9 @@ export default class ContactPage extends Vue {
   lastname: string = '';
   phone: string = '';
   comment: String = '';
+  overlay: boolean = false;
+  zIndex: number = 0;
+
   nameRules: ((value: string) => string | boolean)[] = [
     value => {
       if (value) return true;

@@ -1,69 +1,44 @@
-# Levee
-jazz management and promotion agency web app for SEG-3125 Project #2
+# SEG3125 Class Project - LeveeJazz Web App
 
-## Build Setup
+## Introduction
 
-```bash
-# install dependencies
-$ npm install
+Welcome to the SEG3125 class project - Levee Jazz web app! This app is developed as part of the course SEG3125 and was developed in a nuxt environment.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Technologies
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+- Vue.js
+- Vuetify
+- Spotify Web API
+- TypeScript
+- HTML5
+- SCSS
+- Nuxt.js
 
-# generate static project
-$ npm run generate
-```
+## Getting Started
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+1. Clone the repository: `git clone https://github.com/levee-jazz/levee-jazz-web-app.git`
+2. Install the dependencies: `npm install`
+3. Run the development server: `npm run dev`
 
-## Special Directories
+## Directories
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+- **assets/**: Contains static assets such as images, icons, and stylesheets.
 
-### `assets`
+- **components/**: Contains Vue components used throughout the app.
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+- **layouts/**: Contains layout templates for different pages.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+- **pages/**: Contains individual Vue pages that correspond to specific routes.
 
-### `components`
+- **plugins/**: Contains custom plugins used in the app.
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+- **static/**: Contains static files that will be served directly, such as favicon and robots.txt.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
-### `layouts`
+## How to Use
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+1. Launch the web app: [Levee Jazz Web App](https://leveejazz-34q2pihe4-dsl04.vercel.app/)
+2. Browse albums and view details.
+3. Listen to sample tracks with Spotify player.
+5. Fill the contact form if interested in joining as a jazz artist
+6. etc...

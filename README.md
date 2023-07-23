@@ -8,6 +8,7 @@ Welcome to the SEG3125 class project - Levee Jazz web app! This app is developed
 
 - Vue.js
 - Vuetify
+- Tailwind
 - Spotify Web API
 - TypeScript
 - HTML5

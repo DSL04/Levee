@@ -33,7 +33,7 @@ export default class ContactPage extends Vue {
   public lastNameLabel: string = 'Last Name(ex. Charles)';
   public phoneNumberLabel: string = 'Phone Number(ex. 6123561023)';
   public emailLabel: string = 'E-mail(ex. pheon@outlook.com)';
-  public commentLabel: string ='Write anything you deem interesting about yourself, or you thought we should know';
+  public commentLabel: string ='(optional)Write anything you deem interesting about yourself, or you thought we should know';
 
   public clearButtonText: string = 'CLEAR';
   public submitButtonText: string = 'SUBMIT';
@@ -111,7 +111,7 @@ export default class ContactPage extends Vue {
     this.lastNameLabel = 'Last Name(ex. Charles)';
     this.phoneNumberLabel = 'Phone Number(ex. 6123561023)';
     this.emailLabel = 'E-mail(ex. pheon@outlook.com)'
-    this.commentLabel ='Write anything you deem interesting about yourself, or you thought we should know'
+    this.commentLabel ='(optional)Write anything you deem interesting about yourself, or you thought we should know'
 
   
   }
@@ -143,7 +143,7 @@ export default class ContactPage extends Vue {
     this.lastNameLabel = 'Nom(ex. Charle)';
     this.phoneNumberLabel = 'Numéro de téléphone(ex. 6123561023)';
     this.emailLabel = 'E-mail(ex. pheon@outlook.com)'
-    this.commentLabel = 'Écrivez tout ce que vous jugez intéressant à propos de vous-même ou que vous pensez que nous devrions savoir';
+    this.commentLabel = '(optionel)Écrivez tout ce que vous jugez intéressant à propos de vous-même ou que vous pensez que nous devrions savoir';
 
   }
 

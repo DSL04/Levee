@@ -46,3 +46,7 @@
     background-image: url(../../static/footerbg.jpg); 
     background-size: cover;
 }
+
+.layout.column > .flex {
+    max-width: revert !important;
+}

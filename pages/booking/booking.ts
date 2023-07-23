@@ -182,6 +182,19 @@ public buttonDisplay() {
     },
   ];
 
+   phoneRules: ((value: string) => string | boolean)[] = [
+    value => {
+      if (value) return true;
+
+      return 'Phone is required.';
+    },
+    value => {
+      if (value?.length <= 10) return true;
+
+      return 'Phone must be 10 characters.';
+    },
+  ];
+
   public clearForm() {
     this.firstName = ''
     this.lastName = ''

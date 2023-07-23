@@ -9,13 +9,38 @@
             <h1 class="booking-title">BOOK AN EVENT NOW</h1>
         </div>
 
+        <!--Timeline-->
+        <div class="mt-7 booking-timeline-background">
+        <div class="mt-4 flex justify-center booking-title2">HERE IS WHAT YOU CAN EXPECT</div>
+        <v-timeline class="flex justify-center booking-max-height2">
+            <div class="w-1/2">
+            <v-timeline-item
+                dot-color="purple-lighten-2"
+                fill-dot
+            >
+                <v-card>
+                <v-card-title class="bg-purple-lighten-2">
+                    <h2 class="font-weight-light">
+                    BOOKING SECTION
+                    </h2>
+                </v-card-title>
+                <v-card-text>
+                    BOOK NOW, from a selection of our top artists for the years 2023-2024!
+                </v-card-text>
+                </v-card>
+            </v-timeline-item>
+            </div>
+        </v-timeline>
+
+        </div>
+
         <!--Booking Section-->
         <div class="booking-section-background mt-5 mb-5">
-            <div class="booking-title flex justify-center">Endulge in the art of Jazz: Book one of our shows Below</div>
+            <div class="booking-title flex justify-center">ENDULGE IN THE ART OF JAZZ: BOOK ONE OF OUR SHOWS BELOW</div>
 
             <!--Form Container-->
             <div class="flex justify-center">
-                <div class="w-1/2 border">
+                <div class="w-1/2 border booking-max-height">
                     <!--Step 1: Welcome Form-->
                     <div class="booking-title3 flex flex-col space-y-10"
                     v-if="step === 1"
@@ -31,7 +56,7 @@
                     <div class="space-y-10"
                     v-if="step === 2"
                     >
-                        <h1 class="booking-title2 flex justify-center">SELECT AN EVENT</h1>
+                        <h1 class="booking-title3 flex justify-center">SELECT AN EVENT</h1>
                         <div class="">
                             <v-select
                                 v-model="selectedEvent"
@@ -69,7 +94,7 @@
                     <div
                     v-if="step === 3"
                     >
-                        <h1 class="booking-title2">PLEASE FILL THE FOLLOWING CONTACT INFORMATION</h1>
+                        <h1 class="booking-title3 flex justify-center">PLEASE FILL THE FOLLOWING CONTACT INFORMATION</h1>
 
                         <div>
                             <form class="">
@@ -93,6 +118,8 @@
                                     
                                         <v-text-field
                                         v-model="phoneNumber"
+                                        :rules="phoneRules"
+                                        type="number"
                                         label="Phone Number"
                                         :counter="10"
                                         required
@@ -128,10 +155,10 @@
                         <div class="flex justify-center mt-5"><img class="image-container" src="../../static/bookingCompletion.gif"/></div>
                         <div class="flex">
                             <div class="w-1/2 mt-5 space-y-10">
-                                <div class="booking-title3">CONCERT NAME: {{ storedEvent.eventName }}</div>
-                                <div class="booking-title3">ARTIST: {{ storedEvent.artistName }}</div>
-                                <div class="booking-title3">THEATER: {{ storedEvent.theater }}</div>
-                                <div class="booking-title3">DATE: {{ storedEvent.date }}</div>
+                                <div class="booking-title4">CONCERT NAME: {{ storedEvent.eventName }}</div>
+                                <div class="booking-title4">ARTIST: {{ storedEvent.artistName }}</div>
+                                <div class="booking-title4">THEATER: {{ storedEvent.theater }}</div>
+                                <div class="booking-title4">DATE: {{ storedEvent.date }}</div>
                             </div>
                             
                             <div class="w-1/2">
@@ -140,7 +167,7 @@
                         </div>
                     </div>
                     <h1 class="booking-title3 mt-5 flex justify-center">PAYMENTS WILL BE MADE IN PERSON AT THE EVENT SETTING</h1>
-                    <div class="flex justify-center"><v-btn to="/booking">BOOK AGAIN</v-btn></div>
+                    <div class="flex justify-center"><v-btn href="/booking">BOOK AGAIN</v-btn></div>
 
                     </div>
 

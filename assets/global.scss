@@ -1,0 +1,167 @@
+
+  
+  .home-title {
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+      font-family: '?????';
+  }
+  
+  .home-title2 {
+      color: #fff;
+      text-align: center;
+      font-size: 35px;
+      font-family: '?????';
+  }
+  
+  .home-title3 {
+      color: #fff;
+      font-size: 20px;
+      font-family: '?????';
+      text-align: -webkit-center;
+  }
+  
+  .venues-title {
+      color: #fff;
+      font-size: 35px;
+      font-family: '?????';
+      text-shadow:
+      -2px -2px 0 #4e0076,
+      2px -2px 0 #4e0076,
+      -2px 2px 0 #4e0076,
+      2px 2px 0 #4e0076;
+  }
+  
+  .height-600 {
+    height: 600px;
+  }
+  
+  .artists-button {
+    .v-btn__content {
+      color: #fff !important;
+      font-family: '?????'!important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 25px !important;
+    }
+  }
+
+    .theme--light.v-btn.v-btn--has-bg {
+        background-image: linear-gradient(50deg, #6700a7, #390061, #6702a7) !important; 
+    }
+  
+  
+  .home-video-background {
+    width: -webkit-fill-available;
+    height: 474px;
+    flex-shrink: 0;
+    background: url(../static/homeVideo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  }
+  
+  .home-timeline-background {
+    width: -webkit-fill-available;
+    height: 600px;
+    flex-shrink: 0;
+    background-image: linear-gradient(50deg, #190625, #390061, #190625); 
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  }
+  
+  .home-description-background {
+    width: -webkit-fill-available;
+    height: 600px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background-image: linear-gradient(90deg, #1d1c1d, #3b3a3b, #1d1c1d); 
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  }
+  
+  .home-artists-background {
+    width: -webkit-fill-available;
+    height: 600px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background-image: linear-gradient(90deg, #000, #2a0b3d, #000); 
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+  
+  .home-venu-background {
+    width: -webkit-fill-available;
+    height: 600px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background-image: linear-gradient(90deg, #000, #150320, #000); 
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+  
+  .home-media-background {
+    width: -webkit-fill-available;
+    height: 600px;
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
+    background: #000;
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+  
+  }
+  
+  
+  .top-artist-image {
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    object-fit: cover;
+    /* border-radius: 70%; */
+    /* box-shadow: 4px 4px 4px 4px  #712c9a; */
+  }
+  
+
+  
+  .artist-title {
+      font-family: '?????';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+  
+      color: #fff;
+  }
+  
+  .artist-description {
+    font-family: '?????';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      text-transform: capitalize;
+  
+      color: #fff;
+      max-height: 100px;
+      overflow-y: auto;
+  }
+  
+  .artist-scroller-x {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    overflow-x:auto;
+    }
+  
+  .home-media-scroller-y {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 83%;
+    overflow-y: auto;
+    height: 450px;
+  }
+   
+  .max-height {
+    max-height: 500px;
+    overflow-y: auto;
+  }

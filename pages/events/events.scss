@@ -2,15 +2,26 @@
     width: -webkit-fill-available;
     height: 474px;
     flex-shrink: 0;
-    background: #000;
+    background: url(../../static/eventsVideo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit:cover;
     /* box-shadow: 4px 4px 4px 4px #a60cff; */
   }
 
 .events-timeline-background {
     width: -webkit-fill-available;
+    height: 300px;
+    flex-shrink: 0;
+    background-image: linear-gradient(50deg, #190625, #390061, #190625); 
+    /* box-shadow: 4px 4px 4px 4px #a60cff; */
+}
+
+.events-description-background {
+    width: -webkit-fill-available;
     height: 600px;
     flex-shrink: 0;
-    background: #303030;
+    background-image: linear-gradient(90deg, #1d1c1d, #3b3a3b, #1d1c1d); 
     /* box-shadow: 4px 4px 4px 4px #a60cff; */
   }
  
@@ -56,11 +67,20 @@
     overflow-y: auto;
   }
 
+.events-max-height2 {
+    max-height: 230px;
+    overflow-y: auto;
+}
+
   .theme--light.v-btn.v-btn--has-bg {
     background-color: #292727;
 }
 
 .theme--light.v-icon {
     color: rgb(255, 255, 255);
+}
+
+.theme--light.v-btn.v-btn--has-bg {
+    background: #333232  !important; 
 }
 

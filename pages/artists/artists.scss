@@ -1,16 +1,19 @@
 .artists-video-background {
-    width: -webkit-fill-available;
-    height: 474px;
-    flex-shrink: 0;
-    background: #000;
-    /* box-shadow: 4px 4px 4px 4px #a60cff; */
-  }
+  width: -webkit-fill-available;
+  height: 474px;
+  flex-shrink: 0;
+  background: url(../../static/artistsVideo.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit:cover;
+  /* box-shadow: 4px 4px 4px 4px #a60cff; */
+}
   
   .artists-timeline-background {
     width: -webkit-fill-available;
     height: 600px;
     flex-shrink: 0;
-    background: #555555;
+    background-image: linear-gradient(50deg, #190625, #390061, #190625); 
     /* box-shadow: 4px 4px 4px 4px #a60cff; */
   }
 
@@ -19,7 +22,7 @@
     height: 600px;
     flex-shrink: 0;
     /* background: linear-gradient(to bottom, rgb(75, 12, 86), #280142); */
-    background: #000000;
+    background-image: linear-gradient(50deg, #000, #1d0330, #000); 
     /* box-shadow: 4px 4px 4px 4px #a60cff; */
   
   }
@@ -47,6 +50,13 @@
   
   }
 
+  .background-card-theme {
+    .theme--light.v-card {
+      background-image: linear-gradient(50deg, #1b012b, #390061, #1b012b) !important; 
+      color: rgba(255, 255, 255, 0.87) !important;
+    }
+  }
+
 
   .artists-title {
     color: #fff;
@@ -69,6 +79,17 @@
   font-family: '?????';
 }
 
+.collabs-title {
+  color: #fff;
+  font-size: 40px;
+  font-family: '?????';
+  text-shadow:
+  -2px -2px 0 #4e0076,
+  2px -2px 0 #4e0076,
+  -2px 2px 0 #4e0076,
+  2px 2px 0 #4e0076;
+}
+
   .artists-scroller-x {
     display: grid;
     grid-auto-flow: column;
@@ -76,7 +97,7 @@
     overflow-x:auto;
     }
 
-  .max-height {
+  .artists-max-height {
     max-height: 500px;
     overflow-y: auto;
   }
@@ -85,4 +106,28 @@
     // color: rgba(255, 5, 5, 0.6) !important;
     // font-weight: 500;
     // font-size: 25px;
+}
+
+.menu-color .v-select__selections {
+  color: rgb(240, 233, 233) !important;
+}
+
+.theme--light.v-text-field > .v-input__control > .v-input__slot:before {
+  border-color: rgba(255, 255, 255, 0.42) !important;
+}
+
+.theme--light.v-icon {
+  color: rgba(255, 255, 255, 0.54) !important;
+}
+
+.theme--light.v-label {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.theme--light.v-btn.v-btn--has-bg {
+  background-image: linear-gradient(50deg, #6700a7, #390061, #6702a7) !important; 
+}
+
+.theme--light.v-btn.v-btn--has-bg {
+  background-color: #494444;
 }

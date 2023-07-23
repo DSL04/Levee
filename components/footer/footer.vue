@@ -6,7 +6,7 @@
     <v-container>
       <v-layout column wrap>
         <v-flex xs12 sm6 md4 class="">
-          <ul class="flex justify-around">
+          <ul class="flex space-x-12">
             <div class="spotify-image"></div>
             <div class="pepsi-image"></div>
             <div class="citadel-image"></div>
@@ -20,16 +20,10 @@
         <v-flex xs12 sm6 md4 class="mt-10">
           <!-- <h3 class="footer-title">Contact</h3> -->
           <ul class="flex justify-evenly">
-            <li class="footer-title">Phone: 123-456-7890</li>
-            <li class="footer-title">Email: info@example.com</li>
-            <li class="footer-title">Address: 123 Main Street, City, Country</li>
+            <li class="footer-title">PHONE: 917-122-1412</li>
+            <li class="footer-title">EMAIL: kid@leveeJazz.com</li>
+            <li class="footer-title">ADDRESS: 1412 3rd Ave, New York, NY 10018, United States</li>
           </ul>
-        </v-flex>
-        <v-flex xs12 md4 class=" justify-end">
-          <h3>Follow Us</h3>
-          <v-icon size="24" class="mr-2">mdi-facebook</v-icon>
-          <v-icon size="24" class="mr-2">mdi-twitter</v-icon>
-          <v-icon size="24" class="mr-2">mdi-instagram</v-icon>
         </v-flex>
       </v-layout>
     </v-container>

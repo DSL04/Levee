@@ -10,9 +10,35 @@
         </div>
 
         <!--TimeLine-->
-        <div class="mt-4 events-timeline-background ">
+        <div class="mt-4 events-timeline-background">
+      <div class="mt-4 flex justify-center events-title2">HERE IS WHAT YOU CAN EXPECT</div>
+      <v-timeline class="flex justify-center events-max-height2">
+        <div class="w-1/2">
+          <v-timeline-item
+            dot-color="purple-lighten-2"
+            fill-dot
+          >
+            <v-card>
+              <v-card-title class="bg-purple-lighten-2">
+                <h2 class="font-weight-light">
+                  EVENTS SECTION
+                </h2>
+              </v-card-title>
+              <v-card-text>
+                GET A FEEL FOR THE EVENTS WE WILL BE HOSTING FOR THE YEAR 2023-2024. BOOK NOW!
+              </v-card-text>
+            </v-card>
+          </v-timeline-item>
+        </div>
+      </v-timeline>
+
+    </div>
+
+
+        <!--Description-->
+        <div class="mt-4 events-description-background ">
             <div class="mt-4 flex flex-col justify-center events-title2 space-y-4">
-                <h1 class="flex justify-center">Experience Unforgettable Jazz Events</h1>
+                <h1 class="flex justify-center">EXPERIENCE UNFORGETTABLE JAZZ EVENTS</h1>
                 <div class="flex justify-center max-height">
                     <h1 class="w-1/2">Get ready to immerse yourself in the vibrant world of jazz through our exciting lineup of events. From intimate jazz club performances to electrifying festival shows, our Events page offers a diverse range of musical experiences for jazz enthusiasts of all tastes. Discover captivating live performances by renowned jazz artists, witness breathtaking improvisations, and feel the rhythm that moves your soul. Stay tuned for updates on upcoming events and join us in celebrating the timeless art of jazz.</h1>
                 </div>
@@ -67,7 +93,7 @@
                         <div class="w-1/2 flex flex-col items-start justify-center space-y-10 ">
                             <h1 class="events-title3 text-break">{{ event.artistName }}</h1>
                             <div class=""><h1 class="events-title3 text-break w-3/4">{{ event.eventDescription }}</h1></div>
-                            <v-btn class="">BOOK NOW</v-btn>
+                            <v-btn to="/booking">BOOK NOW</v-btn>
                         </div>
                     </div>                    
 

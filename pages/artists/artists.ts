@@ -181,28 +181,30 @@ export default class ArtistsPage extends Vue {
     }
   ];
 
-  public items = [
+  public collabs = [
     {
       src: require('../../static/tmsStudio.png') ,
-      description: ""
+      description: "TMS"
     },
     {
       src: require('../../static/cona.jpg'),
-      description: ""
+      description: "DETECTIVE CONAN"
     },
     {
       src: require('../../static/lupin.jpg') ,
-      description: ""
+      description: "LUPIN THE 3RD"
     },
     {
       src: require('../../static/robert.jpg') ,
-      description: ""
+      description: "KENDRICK LAMAR"
     },
   ];
 
   public genres = [ 'Smooth Jazz', "Contemporary Jazz", "Fusion Jazz"];
 
   public selectValue: string = '';
+
+  //Methods
 
   public filteredArtists() {
     if (!this.selectValue) {

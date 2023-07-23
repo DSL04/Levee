@@ -12,23 +12,9 @@
             <v-btn text to="/artists">Artists</v-btn>
             <v-btn text to="/events">Events</v-btn>
             <v-btn text to="/booking">Booking</v-btn>
-            <v-btn icon to="/shop">
-            <v-icon>mdi-cart</v-icon>
-            <span>Shop</span>
-            </v-btn>
+            <v-btn text to="/shops"><v-icon>mdi-cart</v-icon>Shop</v-btn>
             <v-btn text to="/contact">Contact</v-btn>
         </v-toolbar-items>
-
-        <v-menu offset-y>
-        <template v-slot:activator="{ on }">
-            <v-btn icon v-on="on">
-            <v-icon>mdi-dots-vertical</v-icon>
-            </v-btn>
-        </template>
-        
-        <!-- Menu items here -->
-
-        </v-menu>
     </v-app-bar> 
 </template>
 

@@ -7,7 +7,7 @@ import { Component, Vue } from 'vue-property-decorator';
   }
 })
 export default class EventsPage extends Vue {
-    public dates = [
+    public dates: string[] = [
         'September - October 2023',
         'November - December 2023',
         'January - February 2024',
@@ -118,7 +118,7 @@ export default class EventsPage extends Vue {
         }
     ]
 
-    public selectedDate = '';
+    public selectedDate: string = '';
 
     public setDate(date: string) {
         this.selectedDate = date;

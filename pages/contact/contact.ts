@@ -29,10 +29,10 @@ export default class ContactPage extends Vue {
   public phoneNumber: string = '';
   public comment: string = '';
 
-  public firstNameLabel: string = 'First Name';
-  public lastNameLabel: string = 'Last Name';
-  public phoneNumberLabel: string = 'Phone Number';
-  public emailLabel: string = 'E-mail';
+  public firstNameLabel: string = 'First Name(ex. John)';
+  public lastNameLabel: string = 'Last Name(ex. Charles)';
+  public phoneNumberLabel: string = 'Phone Number(ex. 6123561023)';
+  public emailLabel: string = 'E-mail(ex. pheon@outlook.com)';
   public commentLabel: string ='Write anything you deem interesting about yourself, or you thought we should know';
 
   public clearButtonText: string = 'CLEAR';
@@ -107,10 +107,10 @@ export default class ContactPage extends Vue {
     this.submitButtonText = 'SUBMIT';
     this.confirmationText = 'THANK YOU FOR COMPLETING THE FORM. WE WILL REACH OUT TO YOU AS SOON AS WE CAN';
 
-    this.firstNameLabel = 'First Name';
-    this.lastNameLabel = 'Last Name';
-    this.phoneNumberLabel = 'Phone Number';
-    this.emailLabel = 'E-mail'
+    this.firstNameLabel = 'First Name(ex. John)';
+    this.lastNameLabel = 'Last Name(ex. Charles)';
+    this.phoneNumberLabel = 'Phone Number(ex. 6123561023)';
+    this.emailLabel = 'E-mail(ex. pheon@outlook.com)'
     this.commentLabel ='Write anything you deem interesting about yourself, or you thought we should know'
 
   
@@ -139,10 +139,10 @@ export default class ContactPage extends Vue {
     this.submitButtonText = 'SOUMETTRE';
     this.confirmationText = 'MERCI D\'AVOIR COMPLÉTÉ LE FORMULAIRE. NOUS VOUS CONTACTERONS DÈS QUE POSSIBLE.';
 
-    this.firstNameLabel = 'Prénom';
-    this.lastNameLabel = 'Nom';
-    this.phoneNumberLabel = 'Numéro de téléphone';
-    this.emailLabel = 'E-mail';
+    this.firstNameLabel = 'Prénom(ex. John)';
+    this.lastNameLabel = 'Nom(ex. Charle)';
+    this.phoneNumberLabel = 'Numéro de téléphone(ex. 6123561023)';
+    this.emailLabel = 'E-mail(ex. pheon@outlook.com)'
     this.commentLabel = 'Écrivez tout ce que vous jugez intéressant à propos de vous-même ou que vous pensez que nous devrions savoir';
 
   }

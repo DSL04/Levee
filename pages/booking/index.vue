@@ -104,7 +104,7 @@
                                         v-model="firstName"
                                         :rules="nameRules"
                                         :counter="10"
-                                        label="First name"
+                                        label="First Name(ex. John)"
                                         required
                                         ></v-text-field>
 
@@ -112,7 +112,7 @@
                                         v-model="lastName"
                                         :rules="nameRules"
                                         :counter="10"
-                                        label="Last name"
+                                        label="Last Name(ex. Charles)"
                                         required
                                         ></v-text-field>
                                     
@@ -120,7 +120,7 @@
                                         v-model="phoneNumber"
                                         :rules="phoneRules"
                                         type="number"
-                                        label="Phone Number"
+                                        label="Phone Number(ex. 6123561023)"
                                         :counter="10"
                                         required
                                     ></v-text-field>
@@ -129,7 +129,7 @@
                                         <v-text-field
                                         v-model="email"
                                         :rules="emailRules"
-                                        label="E-mail"
+                                        label="E-mail(ex. pheon@outlook.com)"
                                         required
                                     ></v-text-field>
                                 </div>

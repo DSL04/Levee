@@ -4,6 +4,11 @@
 
 Welcome to the SEG3125 class project - Levee Jazz web app! This app is developed as part of the course SEG3125 and was developed in a nuxt environment.
 
+## NOTE
+
+ALL IMAGES, VIDEOS, AND OTHER RESOURCES WERE UTILIZED FOR A FICTIONAL COMPANY. ANYTHING SAID IN THIS WEB APP IS PURELY FICTIONAL AND DOES NOT REFLECT THE REAL WORLD.
+
+
 ## Technologies
 
 - Vue.js
